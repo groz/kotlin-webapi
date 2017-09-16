@@ -35,3 +35,13 @@ compileKotlin {
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
+
+ext.dropwizard_version = '1.1.4'
+
+dependencies {
+    compile "io.dropwizard:dropwizard-core:$dropwizard_version"
+}
+
+run {
+    args = ['server', 'config/local.yaml']
+}
