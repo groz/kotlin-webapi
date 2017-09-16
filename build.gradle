@@ -14,6 +14,9 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'kotlin'
+apply plugin: 'application'
+
+mainClassName = 'to.dev.example.MainAppKt'
 
 sourceCompatibility = 1.8
 
